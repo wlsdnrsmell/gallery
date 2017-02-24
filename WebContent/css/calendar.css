@@ -1,0 +1,29 @@
+
+body{
+text-align: center;
+}
+table,th,td{
+	border :  1px solid black;
+}
+th, td{
+	padding: 20px;
+}
+td:hover{
+	background-color: black;
+	color: white;
+}
+td.today{
+	background-color: red;
+	color: white;
+	border: 2px solid red;
+}
+.cover{
+	width: 400px;
+	margin: auto;
+}
+.sun{
+	color: red;
+}
+.sat{
+	color :  blue;
+}

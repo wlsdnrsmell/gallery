@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/gallery3.css">
+<!-- font -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/hanna.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="js/gallery3.js"></script>
+<script src="jquery.masonry.min.js"></script>
+<script src="jquery.imagesloaded.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!-- <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTYjBmsqZflCUb6PZeKT6v1eKqKlGn_o8">
+    </script> -->
+    <style>
+		    	/* 반응형 */
+		@media (max-width: 380px) {
+			body{
+				background-image: url('img/galleryBackground-small3.jpg');
+				background-repeat: no-repeat;
+				background-position-y:50%;
+			}
+			div.gallery_photo_cover{
+			width:250px;
+			margin:auto;
+			}
+			/* div.gallery img{
+			  width:250px;
+			  /* margin-left:10px; */
+			}
+			#map{height: 100px;} */
+			.modal{
+				padding-top:150px !important;
+			}
+			div.modal-body img{
+				width:100% !important;
+			}
+		}
+		    	
+    </style>
+</head>
+<body>
+<div class="wrapper">
+		<header></header>
+		<nav>
+			<ul>
+				<li><a href="#"></a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><span id="day_picker">Date</span></li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Country</a>
+					<div class="dropdown-content">
+						<div id="searchCover">
+							<input type="text" id="search">
+							<button id="searchBtn">검색</button>
+						</div>
+						<span class="country">India</span>
+						<span class="country">America</span>
+						<span class="country">Czech</span>
+						<span class="country">England</span>
+						<span class="country">Europe</span>
+						<span class="country">Spain</span>
+						<span class="country">Iceland</span>
+						<span class="country">Italia</span>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div class=cover-section>
+			<section id="main-section">
+				<div class="paper"> 
+		            <div class="paper-holder"> 
+		            </div> 
+		        </div> 
+	        </section>
+        </div>
+		    <!-- The Modal-->
+		    <div id="myModal" class="modal">
+		        <!--Modal content -->
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <span class="close">&times;</span>
+		                <!-- modal head -->
+		            </div>
+		            <div class="modal-body">
+		            	<!-- modal content -->
+		            </div>
+		            <div class="modal-footer">
+		                <!-- modal -footer -->
+		            </div>
+		        </div>
+		    </div>
+		    <div id="map"></div>
+		
+	</div>
+</body>
+</html>
